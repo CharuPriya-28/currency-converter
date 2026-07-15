@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>💱 Currency Converter</h1>
+
+    <div class="input-group">
+        <label>Enter Amount</label>
+        <input type="number" id="amount" placeholder="Enter Amount">
+    </div>
+
+    <div class="input-group">
+        <label>From</label>
+        <select id="from">
+            <option value="USD">🇺🇸 US Dollar (USD)</option>
+            <option value="INR">🇮🇳 Indian Rupee (INR)</option>
+            <option value="EUR">🇪🇺 Euro (EUR)</option>
+            <option value="GBP">🇬🇧 British Pound (GBP)</option>
+            <option value="JPY">🇯🇵 Japanese Yen (JPY)</option>
+            <option value="AUD">🇦🇺 Australian Dollar (AUD)</option>
+            <option value="CAD">🇨🇦 Canadian Dollar (CAD)</option>
+            <option value="CNY">🇨🇳 Chinese Yuan (CNY)</option>
+            <option value="SGD">🇸🇬 Singapore Dollar (SGD)</option>
+            <option value="AED">🇦🇪 UAE Dirham (AED)</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label>Convert To</label>
+        <select id="to">
+            <option value="INR">🇮🇳 Indian Rupee (INR)</option>
+            <option value="USD">🇺🇸 US Dollar (USD)</option>
+            <option value="EUR">🇪🇺 Euro (EUR)</option>
+            <option value="GBP">🇬🇧 British Pound (GBP)</option>
+            <option value="JPY">🇯🇵 Japanese Yen (JPY)</option>
+            <option value="AUD">🇦🇺 Australian Dollar (AUD)</option>
+            <option value="CAD">🇨🇦 Canadian Dollar (CAD)</option>
+            <option value="CNY">🇨🇳 Chinese Yuan (CNY)</option>
+            <option value="SGD">🇸🇬 Singapore Dollar (SGD)</option>
+            <option value="AED">🇦🇪 UAE Dirham (AED)</option>
+        </select>
+    </div>
+
+    <button onclick="convert()">Convert Currency</button>
+
+    <div class="result">
+        <h2 id="result">Converted Amount Appears Here</h2>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
